@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Correct approach: convert number to string before setting innerHTML
+    document.getElementById('myDiv').innerHTML = String(123); 
+  </script>
+</body>
+</html>
